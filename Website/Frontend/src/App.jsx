@@ -1,16 +1,13 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import { Button } from 'react-bootstrap';
+import main_img from './assets/main_img.png';
+import Navbar from './components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <Button variant="danger" onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </Button>
+      <Navbar />
+
+      <img src={main_img} width="100%" height="auto" />
     </>
   );
 }

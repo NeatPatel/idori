@@ -1,0 +1,26 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/bootstrap/scss/mixins/_caret.scss';
+
+.nav {
+    background-color: $gray-100;
+}
+
+.navText {
+    color: $purple-400;
+}
+
+.navText:hover {
+    color: $purple-500;
+    text-decoration: underline;
+}
+
+.navTextNoHover {
+    color: $purple-400;
+}
+
+.navTextNoHover:active {
+    color: $purple-400;
+}
