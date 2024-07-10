@@ -1,0 +1,19 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+
+.navText {
+    color: $purple-400;
+    text-decoration: none;
+}
+
+.navText:hover {
+    color: $purple-500;
+    text-decoration: underline;
+}
+
+.navTextNoHover {
+    color: $purple-400;
+    text-decoration: none;
+}

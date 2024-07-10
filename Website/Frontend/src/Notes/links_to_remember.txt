@@ -1,0 +1,15 @@
+For the website, here are the different urls associated:
+
+Home: /
+Shop: /shop
+Blog: /blog
+Eco-Friendly Brands: /eco-friendly-brands
+Sustainability Activities: /sustainability-activities
+Partners: /partners
+Philanthropy: /philanthropy
+Production: /production
+Meet the Team: /meet-the-team
+Contact Us: /contact-us
+Get Involved: /get-involved
+Press: /press
+Play (Games): /play

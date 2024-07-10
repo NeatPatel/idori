@@ -1,0 +1,9 @@
+import styles from './blog.module.scss';
+
+function Blog() {
+    return (<>
+        <h1>Blog</h1>
+    </>);
+}
+
+export default Blog;

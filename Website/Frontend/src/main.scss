@@ -1,0 +1,29 @@
+// Default body font unless changed here
+body {
+    font-family: "Rammetto One" !important;
+}
+
+
+// Font difference for smaller words
+p {
+    font-family: "Calibri" !important;
+}
+
+// Create popping effect when hovering over all buttons
+a:hover {
+    scale: 1.05;
+}
+
+::selection {
+    background: mix(#ffffff, #6f42c1, 75%);
+}
+
+// Override theme colors
+$theme-colors: (
+    "primary": mix(#ffffff, #6f42c1, 20%),
+    "secondary": #dee2e6,
+    "info": mix(#ffffff, #20c997, 60%),
+    "light": #f8f9fa
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
