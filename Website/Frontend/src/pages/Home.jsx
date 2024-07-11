@@ -1,4 +1,7 @@
 import { Button, Card } from 'react-bootstrap';
+import styles from './home.module.scss';
+
+// Images
 import TitleBlock from '../components/TitleBlock.jsx'
 import idoriPlanet from '../assets/planet.png';
 import tractor from '../assets/tractor.png';
@@ -7,9 +10,14 @@ import happyBenjy from '../assets/happy_benjy.png';
 import treehoppers from '../assets/treehoppers.png';
 import characters from '../assets/characters.png';
 import earth from '../assets/earth.png';
-import styles from './home.module.scss';
+
+import main_img from '../assets/main_img.jpg';
+
+const homeTitle = "Idori: Building a more sustainable future for the next generation";
 
 function Home() {
+    document.title = homeTitle;
+
     return (<>
         <div className={styles.mainBodyDiv}>
             <TitleBlock animation={false} left={<h1>Welcome to the Planet of Idori</h1>} right={<img src={idoriPlanet} height="80%" width="80%" className="mx-auto my-auto" />} txtColor="primary" />
@@ -19,15 +27,18 @@ function Home() {
             <TitleBlock animation={true} left={<h2>Eventually, they found a beautiful planet called Earth</h2>} right={<img src={earth} height="80%" width="80%" />} txtColor="blue" />
             <TitleBlock animation={true} left={<img src={happyBenjy} height="40%" width="40%" />} right={<h2>Now the Idorians teach the children of Earth about sustainability</h2>} txtColor="teal" />
             <TitleBlock animation={true} left={<h2>So our planet remains beautiful for many generations to come</h2>} right={<img src={characters} height="80%" width="80%" />} txtColor="white" />
-
-            <Card className={styles.imageCard + " d-flex"}>
-                <div className={styles.placeholderScroll} />
-                <Card className={styles.innerCard + " mt-auto card-footer text-primary bg-info"}>
-                    <h2>Adopt an Idorian Today!</h2>
-                    <Button className="justify-content-center text-white">
-                        Shop Now!
-                    </Button>
-                </Card>
+            
+            <div className={styles.placeholderScroll} />
+            <Card className="text-center">
+                <img className="card-img" src={main_img} />
+                <div className={styles.innerCard + " d-flex flex-column justify-content-end mt-auto card-img-overlay"}>
+                    <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary">
+                        <h2>Adopt an Idorian Today!</h2>
+                        <Button className="justify-content-center text-white">
+                            Shop Now!
+                        </Button>
+                    </div>
+                </div>
             </Card>
         </div>
     </>);

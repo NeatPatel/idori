@@ -8,23 +8,15 @@
     background-image: linear-gradient(#0a0727, #58268e, #e5cdff);
 }
 
-.imageCard {
-    // Card display
-    text-align: center;
-    padding: 4vh;
-
-    min-height: 150svh;
-
-    background-image: url('../assets/main_img.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
 .innerCard {
     scroll-snap-align: center;
 }
 
 .placeholderScroll {
-    margin-top: -12vh;
+    margin-bottom: 10svh;
+
+    // this is cheating right here, haha
+    border: 1px solid transparent;
+
     scroll-snap-align: start;
 }
