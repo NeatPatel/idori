@@ -4,17 +4,27 @@
 @import '../node_modules/bootstrap/scss/_variables.scss';
 @import '../node_modules/bootstrap/scss/mixins/_caret.scss';
 
+.mainBodyDiv {
+    background-image: linear-gradient(#0a0727, #58268e, #e5cdff);
+}
+
 .imageCard {
     // Card display
-    margin-top: -280px;
     text-align: center;
     padding: 4vh;
 
-    // Centering the card
-    margin-left: 20%;
-    margin-right: 20%;
+    min-height: 150svh;
+
+    background-image: url('../assets/main_img.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-.mainImg {
-    pointer-events: none;
+.innerCard {
+    scroll-snap-align: center;
+}
+
+.placeholderScroll {
+    margin-top: -12vh;
+    scroll-snap-align: start;
 }

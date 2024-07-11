@@ -1,11 +1,15 @@
+// snap scrolling
+html {
+    scroll-snap-type: y mandatory;
+}
+
 // Default body font unless changed here
 body {
     font-family: "Rammetto One" !important;
 }
 
-
 // Font difference for smaller words
-p {
+a, p {
     font-family: "Calibri" !important;
 }
 
@@ -23,7 +27,11 @@ $theme-colors: (
     "primary": mix(#ffffff, #6f42c1, 20%),
     "secondary": #dee2e6,
     "info": mix(#ffffff, #20c997, 60%),
-    "light": #f8f9fa
+    "light": #f8f9fa,
+    "brown": mix(#ffffff, #462424, 50%),
+    "blue": mix(#ffffff, #2e359e, 70%),
+    "teal": mix(#ffffff, #20c997, 20%),
+    "purple": mix(#ffffff, #6f42c1, 40%)
 );
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
