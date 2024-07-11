@@ -11,11 +11,25 @@
     }
 }
 
+.topTitleBlock {
+    margin-bottom: 75vh !important;
+    padding-top: 15svh !important;
+
+    width: 100%;
+    height: fit-content;
+
+    scroll-snap-align: center;
+
+    img {
+        pointer-events: none;
+    }
+}
+
 .innerBlock {
     opacity: 0;
 }
 
-// blockLeft and blockRight are both animation classes
+// leftBlock and rightBlock are both animation classes
 
 @media (prefers-reduced-motion: no-preference) {
     .leftBlock {

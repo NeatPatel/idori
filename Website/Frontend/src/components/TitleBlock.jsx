@@ -45,7 +45,7 @@ function TitleBlock(props) {
     }, []);
 
     return (<>
-        <Row id={props.id} className={styles.titleBlock + classesBlock}>
+        <Row id={props.id} className={(props.animation ? styles.titleBlock : styles.topTitleBlock) + classesBlock}>
             <Col ref={leftBlockRef} className={`${leftBlockIsVisible ? styles.leftBlock : ""} my-auto ${props.animation ? styles.innerBlock : ""}`}>
                 {props.left}
             </Col>
