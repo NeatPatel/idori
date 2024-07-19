@@ -1,0 +1,16 @@
+These are the colors that you can use (test them out to see what they are!):
+
+primary: a mix of white and #6f42c1 (20% white)
+secondary: #dee2e6
+warning: yellow
+danger: red
+success: green
+info: a mix of white and #20c997 (60% white)
+light: #f8f9fa
+dark: a dark color (almost black, but kinda gray)
+brown: a mix of white and #462424 (50% white)
+blue: a mix of white and #2e359e (70% white)
+teal: a mix of white and #20c997 (20% white)
+purple: a mix of white and #6f42c1 (40% white)
+
+will update this later

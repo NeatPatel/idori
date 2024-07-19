@@ -1,0 +1,54 @@
+Here is how to use Bootstrap in a nutshell:
+
+-----------------------------------------------------------------------------------------------
+
+className:
+
+take an HTML element such as: <p>This is a paragraph</p>
+and add the following attribute tag: "className"
+
+it will become like this if you want to align your text to the
+left:
+
+<p className="text-start">This is a paragraph</p>
+
+-----------------------------------------------------------------------------------------------
+
+Components:
+
+If you want to use any components from the React-Bootstrap documentation, please
+import them before using:
+
+import { Button, Navbar, Col, Row, Container, Image, Card } from 'react-bootstrap';
+
+^ don't use this line in your code, but those are pieces you can import individually
+
+for example:
+
+import { Button } from 'react-bootstrap';
+
+this will import JUST a button, and add more components as you need them
+
+-----------------------------------------------------------------------------------------------
+
+Using Bootstrap Components:
+
+In order to use a "Button" component, use it as though it was a SingleBlock, DoubleBlock, or TripleBlock
+component:
+
+<Button variant="primary">Click Me!</Button>
+
+this will create a purple button that says "Click Me!"
+
+* note that I used "variant" instead of the usual "className", different Bootstrap
+Components have different configurations (some might even use "style")
+
+* Think of Bootstrap Components as Widgets you can use to design the website
+
+for more information:
+
+https://react-bootstrap.netlify.app/docs/getting-started/introduction
+
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+-----------------------------------------------------------------------------------------------
