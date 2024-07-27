@@ -12,7 +12,7 @@ props.mb - Margin from the bottom (in svh; a unit of measurement)
 function SingleBlock(props) {
     return (<>
         <Container className="d-flex" fluid>
-            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className="w-75 text-center mx-auto">
+            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className="w-100 text-center mx-auto">
                 <Col className="m-auto">{props.content}</Col>
             </Row>
         </Container>
