@@ -14,7 +14,7 @@ props.mb - Margin from the bottom
 function TripleBlock(props) {
     return (<>
         <Container className="d-flex" fluid>
-            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className="w-75 text-center mx-auto">
+            <Row style={{marginTop: `${props.mt}svh`, marginBottom: `${props.mb}svh`}} className="w-100 text-center mx-auto">
                 <Col className="m-auto">{props.left}</Col>
                 <Col className="m-auto">{props.middle}</Col>
                 <Col className="m-auto">{props.right}</Col>

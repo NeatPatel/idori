@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home.jsx';
 import Shop from './pages/Shop.jsx';
 import Blog from './pages/Blog.jsx';
@@ -36,6 +37,8 @@ function App() {
             <Route path="play" element={<Play />} />
           </Route>
         </Routes>
+
+        <Footer />
       </HashRouter>
     </>
   );
