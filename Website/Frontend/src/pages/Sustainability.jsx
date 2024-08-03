@@ -65,7 +65,7 @@ function Sustainability() {
         
         </>} />
         <div>
-            <footer>
+            
                 <TripleBlock mt="25" mb="5" left={<>
                     <h2 style={{"fontSize" : "15px"}} className="text-primary">Quick Links</h2>
                 </>} middle={<>
@@ -73,7 +73,7 @@ function Sustainability() {
                 </>} right={<>
                     <h2 style={{"fontSize" : "15px"}} className="text-primary">Our Mission</h2>
                 </>} />
-            </footer>
+           
         </div>
         
     </>);
