@@ -2,14 +2,14 @@ import styles from './sustainability.module.scss';
 import SingleBlock from '../components/SingleBlock.jsx'
 import DoubleBlock from '../components/DoubleBlock.jsx'
 import { Link } from 'react-router-dom';
-import TripleBlock from '../components/TripleBlock.jsx'
 const sustainabilityTitle = "Engage in Fun and Educational Sustainability Activities for Kids | Idori";
 
 function Sustainability() {
     document.title = sustainabilityTitle;
 
     return (<>
-        <SingleBlock mt="10" mb="10" content={<>
+    <div>
+    <SingleBlock mt="10" mb="5" content={<>
             <h1 className="text-primary">Engage in Fun and Educational Sustainability Activities for Kids</h1>
             <p style = {{"color" : "#9067CC"}}>Our curated list of engaging activities offers practical 
                 and interactive ways to teach kids about sustainability while fostering a love for the environment.</p>
@@ -47,7 +47,7 @@ function Sustainability() {
         </div>
             
         </>} />
-        <DoubleBlock mt="10" mb="0" left={<>
+        <DoubleBlock mt="10" mb="10" left={<>
                 <img style={{"width":"500px"}} src='https://idori.com/cdn/shop/files/IMG_8432.jpg?v=1688581589'></img>
         </>} right={<>
         <div className = "text-primary">
@@ -64,18 +64,7 @@ function Sustainability() {
         
         
         </>} />
-        <div>
-            
-                <TripleBlock mt="25" mb="5" left={<>
-                    <h2 style={{"fontSize" : "15px"}} className="text-primary">Quick Links</h2>
-                </>} middle={<>
-                    <h2 style={{"fontSize" : "15px"}} className="text-primary">Info</h2>
-                </>} right={<>
-                    <h2 style={{"fontSize" : "15px"}} className="text-primary">Our Mission</h2>
-                </>} />
-           
-        </div>
-        
+    </div>        
     </>);
 }
 
