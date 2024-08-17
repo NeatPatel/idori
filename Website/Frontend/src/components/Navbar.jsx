@@ -20,7 +20,7 @@ function Navbar() {
             </Nbar.Brand>
             <Nbar.Toggle />
             <Nbar.Collapse>
-                <Nav variant="primary" className="mx-3">
+                <Nav variant="primary" className="ms-auto text-end me-3">
                     <Link to="/" className={styles.navText + " nav-link text-primary"}>Home</Link>
                     <Link to="/shop" className={styles.navText + " nav-link text-primary"}>Shop</Link>
                     <NavDropdown title={learnElement} className={styles.navDropDown}>
