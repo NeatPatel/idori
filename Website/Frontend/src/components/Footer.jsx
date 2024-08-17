@@ -10,17 +10,17 @@ function Footer() {
                     <Row>
                         <Col className="ms-3">
                             <h4 className="text-primary mb-3">Quick Links </h4>
-                            <Link to="/team" className="text-decoration-none text-primary"><p>Instagram</p></Link>
-                            <Link to="/about" className="text-decoration-none text-primary"><p>Facebook</p></Link>
+                            <Link to="https://www.instagram.com/idorians/" className="text-decoration-none text-primary"><p>Instagram</p></Link>
+                            <Link to="https://www.facebook.com/theidorians/" className="text-decoration-none text-primary"><p>Facebook</p></Link>
                         </Col>
                         <Col>
                             <h4 className="text-primary mb-3">Info</h4>
-                            <Link to="/team" className="text-decoration-none text-primary"><p>Terms & Conditions</p></Link>
-                            <Link to="/about" className="text-decoration-none text-primary"><p>Privacy Policy</p></Link>
+                            <Link to="/terms&conditions" className="text-decoration-none text-primary"><p>Terms & Conditions</p></Link>
+                            <Link to="/privacy-policy" className="text-decoration-none text-primary"><p>Privacy Policy</p></Link>
                         </Col>
                         <Col>
                             <h4 className="text-primary mb-3">Our Mission</h4>
-                            <Link to="/privacy-policy" className="text-decoration-none text-primary"><p>To inspire curiosity, imagination, and empathy for our beautiful planet.</p></Link>
+                            <p className='text-primary'>To inspire curiosity, imagination, and empathy for our beautiful planet.</p>
                         </Col>
                     </Row>
                     <Row>
