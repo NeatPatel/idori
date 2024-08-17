@@ -1,6 +1,6 @@
 import styles from './getinvolved.module.scss';
 import SingleBlock from '../components/SingleBlock';
-import { Form, Row, Col } from 'react-bootstrap';
+import { Form, Row, Col, ListGroup } from 'react-bootstrap';
 import { useState } from 'react';
 const involvedTitle = "Engage, Inspire, and Make a Difference | Get Involved with Idori";
 
@@ -26,14 +26,13 @@ function GetInvolved() {
                     Idori is a young venture and we are looking for anybody who is passionate about our mission to save the
                     environment who believes that their skills could help this company grow and make real impact! <br/>
                     We are specifically interested in (but not limited to) hiring the following roles: <br/>
-                    - E-commerce Intern (Helping with sales, operations and marketing) <br/>
-
-                    - Social Media Intern (Actively managing several social media platforms) <br/>
-
-                    - Design Intern (Developing branding strategies and helping with graphic design) <br/>
-
-                    - Software Engineer Intern (Programming and developing game design)
                 </p>
+                <ListGroup className="w-75 m-auto">
+                    <ListGroup.Item className="text-primary">E-commerce Intern (Helping with sales, operations and marketing)</ListGroup.Item>
+                    <ListGroup.Item className="text-primary">Social Media Intern (Actively managing several social media platforms)</ListGroup.Item>
+                    <ListGroup.Item className="text-primary">Design Intern (Developing branding strategies and helping with graphic design)</ListGroup.Item>
+                    <ListGroup.Item className="text-primary">Software Engineer Intern (Programming and developing game design)</ListGroup.Item>
+                </ListGroup>
             </div>
             
             </>}></SingleBlock>
