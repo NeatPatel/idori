@@ -1,0 +1,22 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/bootstrap/scss/mixins/_caret.scss';
+
+.mainBodyDiv {
+    background-image: linear-gradient(rgb(227, 243, 237), rgb(191, 237, 227), rgb(55, 215, 196));
+}
+
+.innerCard {
+    scroll-snap-align: center;
+}
+
+
+.placeholderScroll {
+    margin-bottom: 10svh;
+
+    border: 1px solid transparent;
+
+    scroll-snap-align: start;
+}
