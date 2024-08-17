@@ -1,6 +1,6 @@
 import styles from './contactus.module.scss';
 import SingleBlock from '../components/SingleBlock.jsx';
-import { Form, Row, Col } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
 const contactTitle = "Connect with Us and Share Your Sustainability Journey | Contact Idori";
@@ -58,8 +58,8 @@ function ContactUs() {
                 </Row>
                 <Row className="mt-2">
                     <Col>
-                        <Form.Group>
-                            <Form.Control className="text-light text-left w-25 bg-primary me-auto ms-1" type="submit" placeholder="Submit" />
+                        <Form.Group className="text-start">
+                            <Button href="#" className="text-light bg-primary">Submit</Button>
                         </Form.Group>
                     </Col>
                 </Row>

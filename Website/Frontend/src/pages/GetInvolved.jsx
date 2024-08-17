@@ -1,6 +1,6 @@
 import styles from './getinvolved.module.scss';
 import SingleBlock from '../components/SingleBlock';
-import { Form, Row, Col, ListGroup } from 'react-bootstrap';
+import { Form, Row, Col, ListGroup, Button } from 'react-bootstrap';
 import { useState } from 'react';
 const involvedTitle = "Engage, Inspire, and Make a Difference | Get Involved with Idori";
 
@@ -71,8 +71,8 @@ function GetInvolved() {
                 </Row>
                 <Row className="mt-2">
                     <Col>
-                        <Form.Group>
-                            <Form.Control className="text-light text-left w-25 bg-primary me-auto ms-1" type="submit" placeholder="Submit" />
+                        <Form.Group className="text-start">
+                            <Button href="#" className="text-light bg-primary">Submit</Button>
                         </Form.Group>
                     </Col>
                 </Row>

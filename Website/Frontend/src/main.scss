@@ -14,7 +14,11 @@ a, p, li {
 }
 
 // Create popping effect when hovering over all buttons
-a:hover {
+a.nav-link:hover {
+    scale: 1.05;
+}
+
+a.btn:hover {
     scale: 1.05;
 }
 

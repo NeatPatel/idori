@@ -25,10 +25,7 @@ function Sustainability() {
                      The 'Ready, Set, Recycle!' activity is a fun and interactive way to teach kids about the importance of recycling and how to properly sort recyclable materials. 
                      Through this engaging activity, children will not only learn about different types of recyclable items,
                      but also develop an understanding of the positive impact recycling has on the environment!</p>
-            <Link to= "https://idori.com/blogs/sustainability-activities/ready-set-recycle">
-                <Button className="text-light" variant="primary"> See Activity</Button>
-            </Link>
-            
+            <Button target="_blank" href="https://idori.com/blogs/sustainability-activities/ready-set-recycle" className="text-light" variant="primary"> See Activity</Button>
         </div>
             
         </>} />
@@ -41,10 +38,7 @@ function Sustainability() {
             <p>This hands-on project combines the joy of crafting with a commitment to sustainability.
                 By repurposing a simple plastic bottle, we'll transform it into a delightful bird 
                 feeder that not only provides nourishment for our feathered friends but also helps reduce waste.</p>
-            <Link to="https://idori.com/blogs/sustainability-activities/diy-upcycled-bird-feeder">
-                <Button className="text-light" variant="primary"> See Activity</Button>
-            </Link>
-            
+            <Button target="_blank" href="https://idori.com/blogs/sustainability-activities/diy-upcycled-bird-feeder" className="text-light" variant="primary"> See Activity</Button>
         </div>
             
         </>} />
@@ -57,10 +51,7 @@ function Sustainability() {
                 transforming their doodles on toilet paper into beautiful, recycled paper using the power of water and sunlight.
                 Through this immersive experience, they will learn the value of recycling,
                 reducing waste, and giving new life to everyday materials.</p>
-            <Link to="https://idori.com/blogs/sustainability-activities/extreme-toilet-paper-recycling">
-                <Button className="text-light" variant="primary"> See Activity</Button>
-            </Link>
-            
+            <Button target="_blank" href="https://idori.com/blogs/sustainability-activities/extreme-toilet-paper-recycling" className="text-light" variant="primary"> See Activity</Button>
         </div>
         
         
