@@ -2,6 +2,7 @@ import styles from './philanthropy.module.scss';
 import SingleBlock from '../components/SingleBlock';
 import blockPhoto from '../assets/test.svg'
 import DoubleBlock from '../components/DoubleBlock';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const philanthropyTitle = "Empowering Change through Philanthropy | Idori";
 
@@ -26,7 +27,7 @@ function Philanthropy() {
                 <p className='text-primary'>One Tree Planted is a remarkable organization that focuses on
                     global reforestation, working tirelessly to combat deforestation and restore vital ecosystems by planting trees in areas that need it most, 
                     creating a lasting positive impact on our planet.</p>
-                    <Link to= "https://onetreeplanted.org/"> <button>Visit Website</button></Link>
+                    <Link to= "https://onetreeplanted.org/"> <Button className="text-light" variant="primary">Visit Website</Button></Link>
             </>}></DoubleBlock>
 
         <DoubleBlock mb = "10" left = {<>
@@ -37,7 +38,7 @@ function Philanthropy() {
             <p>Trees for the Future is an impactful organization 
                 dedicated to restoring degraded lands and improving livelihoods through the planting of trees, 
                 fostering sustainable agroforestry systems, and empowering communities around the world to create a greener and more resilient future.</p>
-                <Link to= "https://trees.org/"> <button>Visit Website</button></Link>
+                <Link to= "https://trees.org/"> <Button className="text-light" variant="primary">Visit Website</Button></Link>
         </div>
             
         </>}></DoubleBlock>
