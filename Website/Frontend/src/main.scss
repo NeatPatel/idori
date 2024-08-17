@@ -22,6 +22,8 @@ a:hover {
     background: mix(#ffffff, #6f42c1, 75%);
 }
 
+$input-placeholder-color: mix(#ffffff, #9067CC, 20%);
+
 // Override theme colors
 $theme-colors: (
     "primary": mix(#ffffff, #9067CC, 20%),
