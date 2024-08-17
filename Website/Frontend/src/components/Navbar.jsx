@@ -62,10 +62,6 @@ function Navbar() {
             </Nbar.Collapse>
             <Nbar.Collapse className="justify-content-end">
                 <Nav className="ms-4" navbarScroll>
-                    <Form className="d-flex">
-                        <Form.Control type="search" placeholder="Search" className="me-1" />
-                        <Button variant="outline-secondary" className="me-3 px-2"><img src={search_icon} width="23vh" height="23vh" /></Button>
-                    </Form>
                     <Link to="/shop" className="nav-link me-3 px-auto"><img src={cart_empty} width="20vh" height="20vh" /></Link>
                 </Nav>
             </Nbar.Collapse>
