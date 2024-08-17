@@ -2,6 +2,7 @@ import styles from './sustainability.module.scss';
 import SingleBlock from '../components/SingleBlock.jsx'
 import DoubleBlock from '../components/DoubleBlock.jsx'
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 const sustainabilityTitle = "Engage in Fun and Educational Sustainability Activities for Kids | Idori";
 
 function Sustainability() {
@@ -25,7 +26,7 @@ function Sustainability() {
                      Through this engaging activity, children will not only learn about different types of recyclable items,
                      but also develop an understanding of the positive impact recycling has on the environment!</p>
             <Link to= "https://idori.com/blogs/sustainability-activities/ready-set-recycle">
-                <button> See Activity</button>
+                <Button className="text-light" variant="primary"> See Activity</Button>
             </Link>
             
         </div>
@@ -41,7 +42,7 @@ function Sustainability() {
                 By repurposing a simple plastic bottle, we'll transform it into a delightful bird 
                 feeder that not only provides nourishment for our feathered friends but also helps reduce waste.</p>
             <Link to="https://idori.com/blogs/sustainability-activities/diy-upcycled-bird-feeder">
-                <button> See Activity</button>
+                <Button className="text-light" variant="primary"> See Activity</Button>
             </Link>
             
         </div>
@@ -57,7 +58,7 @@ function Sustainability() {
                 Through this immersive experience, they will learn the value of recycling,
                 reducing waste, and giving new life to everyday materials.</p>
             <Link to="https://idori.com/blogs/sustainability-activities/extreme-toilet-paper-recycling">
-                <button> See Activity</button>
+                <Button className="text-light" variant="primary"> See Activity</Button>
             </Link>
             
         </div>
