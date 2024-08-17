@@ -1,4 +1,5 @@
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import styles from './home.module.scss';
 
 // Images
@@ -34,9 +35,11 @@ function Home() {
                 <div className={styles.innerCard + " d-flex flex-column justify-content-end mt-auto card-img-overlay"}>
                     <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary">
                         <h2>Adopt an Idorian Today!</h2>
-                        <Button className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
+                        <Link to="/shop">
+                            <Button href="/shop" className="justify-content-center text-white">
+                                Shop Now!
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </Card>
