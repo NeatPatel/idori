@@ -60,11 +60,6 @@ function Navbar() {
                     <Link to="/play" className={styles.navText + " nav-link text-primary"}>Play!</Link>
                 </Nav>
             </Nbar.Collapse>
-            <Nbar.Collapse className="justify-content-end">
-                <Nav className="ms-4" navbarScroll>
-                    <Link to="/shop" className="nav-link me-3 px-auto"><img src={cart_empty} width="20vh" height="20vh" /></Link>
-                </Nav>
-            </Nbar.Collapse>
         </Nbar>
 
         <Outlet />
