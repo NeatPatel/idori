@@ -14,6 +14,8 @@ import ContactUs from './pages/ContactUs.jsx';
 import GetInvolved from './pages/GetInvolved.jsx';
 import Press from './pages/Press.jsx';
 import Play from './pages/Play.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsAndConditions from './pages/TermsAndConditions.jsx'
 
 function App() {
 
@@ -35,6 +37,8 @@ function App() {
             <Route path="get-involved" element={<GetInvolved />} />
             <Route path="press" element={<Press />} />
             <Route path="play" element={<Play />} />
+            <Route path="terms&conditions" element={<TermsAndConditions />}></Route>
+            <Route path="privacy-policy" element = {<PrivacyPolicy/>}></Route>
           </Route>
         </Routes>
 
