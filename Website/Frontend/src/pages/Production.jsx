@@ -15,10 +15,10 @@ function Production() {
         </>}  />
         <SingleBlock mt="10" mb="0" content={<>
             <Card className="bg-dark row no-gutters d-flex">
-                <Card.Img className="opacity-25" src="//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=375 375w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=550 550w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=750 750w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=1100 1100w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996 1168w" alt="Card image" />
-                <Card.ImgOverlay className="d-flex text-center align-items-center m-auto">
+                <Card.Img className="opacity-25" src="//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=375 375w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=550 550w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=750 750w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996&width=1100 1100w,//idori.com/cdn/shop/files/Screen_Shot_2023-08-03_at_12.46.27_AM.png?v=1691037996 1168w" alt="Bears Image" />
+                <Card.ImgOverlay className="overflow-auto d-flex text-center align-items-center m-auto">
                     <Row className="m-auto">
-                        <Col>
+                        <Col lg="12" sm="12">
                             <Card.Title className="text-primary display-6">We partner with bears for <br />humanity so that each one of our <br />plush toys are safe, sustainable, <br />and hand-crafted with love</Card.Title>
                             <Card.Text className="text-primary">
                             Bears for Humanity was born out of a mother’s desire to keep her children safe. When the <br />co-founder Renju found that no organic plush toys existed, she was shocked. Together <br />with her husband, Vijay, she started out on a mission to bring the world beautiful,<br /> organic plush toys that are safe for children.
