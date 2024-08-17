@@ -1,8 +1,15 @@
 import styles from './footer.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Card, ListGroup, Col, Row, Form } from 'react-bootstrap';
 
 function Footer() {
+    const pathName = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathName]);
+
     return (<>
         <Card className="position-relative mt-auto bg-light border-0">
             <ListGroup>
@@ -10,8 +17,8 @@ function Footer() {
                     <Row>
                         <Col className="ms-3">
                             <h4 className="text-primary mb-3">Quick Links </h4>
-                            <Link to="https://www.instagram.com/idorians/" className="text-decoration-none text-primary"><p>Instagram</p></Link>
-                            <Link to="https://www.facebook.com/theidorians/" className="text-decoration-none text-primary"><p>Facebook</p></Link>
+                            <Link target="_blank" to="https://www.instagram.com/idorians/" className="text-decoration-none text-primary"><p>Instagram</p></Link>
+                            <Link target="_blank" to="https://www.facebook.com/theidorians/" className="text-decoration-none text-primary"><p>Facebook</p></Link>
                         </Col>
                         <Col>
                             <h4 className="text-primary mb-3">Info</h4>
