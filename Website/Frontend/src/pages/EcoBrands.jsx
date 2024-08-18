@@ -38,7 +38,7 @@ function EcoBrands() {
             </>}></SingleBlock>
         </div>
         
-        <div className = "text-primary" style={{"paddingLeft" : "10svh", "paddingRight" : "10svh", "textAlign" : "left"}}>
+        <div className = "text-primary" style={{"paddingLeft" : "15vw", "paddingRight" : "15vw", "textAlign" : "left"}}>
         <h3>Eco Friendly Marketplaces</h3>
         <TripleBlock mb = "5"
             left = {<>
