@@ -10,18 +10,19 @@ function Philanthropy() {
     document.title = philanthropyTitle;
 
     return (<>
-        <SingleBlock mt = "5" content = {<>
+    <div className = {styles.mainBodyDiv} >
+    <SingleBlock mt = "5" content = {<>
             <h1 className='text-primary' style={{'fontSize' : '30px'}}> EMPOWERING CHANGE THROUGH <br/> PHILANTHROPY</h1>
             <p className='text-primary'> At Idori, we believe in the power of giving back. 
                 Discover the impactful organizations and initiatives we <br /> donate to, each focused on creating a positive environmental and educational impact.</p>
             </>}></SingleBlock>
 
         <SingleBlock content ={<>
-            <img style={{"width" : "1000px"}} src={blockPhoto} alt="" />
+            <img style={{"width" : "50vw"}} src={blockPhoto} alt="" />
             </>}></SingleBlock>
 
         <DoubleBlock mb = "10" left = {<>
-            <img style = {{"width" : "500px"}} src="https://idori.com/cdn/shop/files/images.jpg?v=1688601221" alt="" />
+            <img style = {{"width" : "25vw"}} src="https://idori.com/cdn/shop/files/images.jpg?v=1688601221" alt="" />
             </>} right = {<>
                 <h2 className='text-primary'>One Tree Planted</h2>
                 <p className='text-primary'>One Tree Planted is a remarkable organization that focuses on
@@ -31,7 +32,7 @@ function Philanthropy() {
             </>}></DoubleBlock>
 
         <DoubleBlock mb = "10" left = {<>
-        <img style = {{"width" : "500px"}} src="https://idori.com/cdn/shop/files/Capture-d_ecran-2022-04-20-a-09.56.50.png?v=1688601329" alt="" />
+        <img style = {{"width" : "25vw"}} src="https://idori.com/cdn/shop/files/Capture-d_ecran-2022-04-20-a-09.56.50.png?v=1688601329" alt="" />
         </>} right = {<>
         <div className='text-primary'>
             <h2 >Trees for the Future</h2>
@@ -42,6 +43,8 @@ function Philanthropy() {
         </div>
             
         </>} />
+    </div>
+        
     </>);
 }
 

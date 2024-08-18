@@ -2,7 +2,7 @@ import SingleBlock from "../components/SingleBlock";
 
 function TermsAndConditions() {
     return (<>
-    <div style={{"textAlign" : "left", "paddingLeft" : "200px", "paddingRight" : "200px"}} className="text-primary">
+    <div style={{"textAlign" : "left", "paddingLeft" : "10vw", "paddingRight" : "10vw"}} className="text-primary">
        
             <h1>Terms And Conditions</h1>
             <p >Drafted: October 9th, 2023 <br />
@@ -60,7 +60,7 @@ function TermsAndConditions() {
             </p>
 
             <p><u>Eligibliity</u></p>
-            <p style={{"paddingBottom" : "25px"}}>
+            <p style={{"paddingBottom" : "5vh"}}>
             In compliance with the requirements of the Children’s Online Privacy Protection Act (COPPA), we do not knowingly collect any personal information from any person under 13 years of age. 
             If you are under 13 years of age you may not provide Idori with any personal information (including but not limited to your email address or name). If Idori inadvertently collects personal information from any person under 13 years of age, we will quickly act to delete that information.
             Further, if you believe that we have collected personal information from any person under 13 years of age, please contact us immediately.

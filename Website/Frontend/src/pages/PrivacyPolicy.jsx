@@ -1,7 +1,7 @@
 function PrivacyPolicy() {
     return (<>
-    <div style={{"textAlign" : "left", "paddingLeft" : "200px", "paddingRight" : "200px"}} className="text-primary">
-        <h1 style={{"paddingBottom" : "25px"}}>Privacy Policy</h1>
+    <div style={{"textAlign" : "left", "paddingLeft" : "10vw", "paddingRight" : "10vw"}} className="text-primary">
+        <h1 style={{"paddingBottom" : "5vh"}}>Privacy Policy</h1>
         <p>
         <i>Drafted: October 9, 2023
         <br />
@@ -104,7 +104,7 @@ function PrivacyPolicy() {
         Please contact us if you believe that we inadvertently collected information from a person under 13 years old.
         </p>
 
-        <p><u>Changes to the popcy</u></p>
+        <p><u>Changes to the policy</u></p>
         <p>
         It is our policy to post any changes we make to our privacy policy on this page. If we make material changes to how we treat our users' personal information, we will notify you by e-mailing you, if we have your e-mail, and through a notice on the website home page. 
         The date the privacy policy was last revised is identified at the beginning of this policy.
