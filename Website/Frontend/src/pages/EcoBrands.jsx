@@ -1,9 +1,8 @@
 import styles from './ecobrands.module.scss';
 import { Button, Card } from 'react-bootstrap';
 
-import TitleBlock from '../components/TitleBlock.jsx'
-import CenterBlock from '../components/CenterBlock.jsx'
-import ThreeBlock from '../components/ThreeBlock.jsx'
+import SingleBlock from '../components/SingleBlock.jsx'
+import TripleBlock from '../components/TripleBlock.jsx';
 
 // Images
 import EarthHero from '../assets/brand_images/EarthHero.webp';
@@ -29,83 +28,97 @@ function EcoBrands() {
     document.title = ecoTitle;
 
     return (<>
-        <div className={styles.mainBodyDiv}>
-        <CenterBlock animation={false} center = {<div><h2>Discover Our Favorite Eco-Friendly Brands for Sustainable Living</h2> <p>Explore our comprehensive collection of eco-friendly brands that prioritize sustainability and offer conscious alternatives for parents seeking a greener lifestyle. Make a positive impact on the planet and support ethical consumption by switching to these trusted eco-friendly brands.</p></div>} txtColor="primary"/>
-
-        <div><h2>Eco-Friendly Marketplaces</h2></div>
-        <ThreeBlock animation={false} 
-            left = {<Card className='bg-primary'>
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img className='card-img' src={EarthHero}/>
-                    <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
-                        <h3>EarthHero</h3> <p>Earth Hero is an online marketplace that offers a wide selection of sustainable and eco-friendly products from various brands. They curate a range of items, including home goods, personal care products, and accessories, all with a focus on sustainability and reducing environmental impact. Earth Hero provides consumers with a convenient platform to find ethical and sustainable brands that offer high-quality products.</p>
-                        <Button as = "a" href = "https://earthhero.com/" target="_blank" className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
-                    </div>
+        <div className='text-primary'>
+            <SingleBlock mt = '5' mb = '5' content={<>
+                <div>
+                    <h2>Discover Our Favorite Eco-Friendly Brands for Sustainable Living</h2> 
+                    <p>Explore our comprehensive collection of eco-friendly brands that prioritize sustainability and offer conscious alternatives for parents seeking a greener lifestyle.
+                        Make a positive impact on the planet and support ethical consumption by switching to these trusted eco-friendly brands.</p>
                 </div>
-            </Card>}
-            center = {
+            </>}></SingleBlock>
+        </div>
+        
+        <div className = "text-primary" style={{"paddingLeft" : "10svh", "paddingRight" : "10svh", "textAlign" : "left"}}>
+        <h3>Eco Friendly Marketplaces</h3>
+        <TripleBlock mb = "5"
+            left = {<>
+                <Card className='bg-primary'>
+                    <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                        <img className='card-img' src={EarthHero}/>
+                        <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
+                            <h3>EarthHero</h3> <p>Earth Hero is an online marketplace that offers a wide selection of sustainable and eco-friendly products from various brands. They curate a range of items, including home goods, personal care products, and accessories, all with a focus on sustainability and reducing environmental impact. Earth Hero provides consumers with a convenient platform to find ethical and sustainable brands that offer high-quality products.</p>
+                            <Button as = "a" href = "https://earthhero.com/" target="_blank" className="justify-content-center text-white">
+                                Shop Now!
+                            </Button>
+                        </div>
+                    </div>
+                </Card> 
+            </>} 
+            middle = {<>
                 <Card>
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img className='card-img' src={ZWS} />
-                    <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
-                        <h3>Zero Waste Store</h3> <p>Zero Waste Store is an online retailer dedicated to providing sustainable and zero waste products for everyday living. They offer a diverse range of items, including reusable alternatives to single-use plastics, eco-friendly home goods, and personal care products, all designed to help individuals reduce waste and live more sustainably. Zero Waste Store promotes a circular economy and empowers consumers to make conscious choices that contribute to a greener future.</p>
-                        <Button as = "a" href = "https://zerowastestore.com/" target="_blank" className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
+                    <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                        <img className='card-img' src={ZWS} />
+                        <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
+                            <h3>Zero Waste Store</h3> <p>Zero Waste Store is an online retailer dedicated to providing sustainable and zero waste products for everyday living. They offer a diverse range of items, including reusable alternatives to single-use plastics, eco-friendly home goods, and personal care products, all designed to help individuals reduce waste and live more sustainably. Zero Waste Store promotes a circular economy and empowers consumers to make conscious choices that contribute to a greener future.</p>
+                            <Button as = "a" href = "https://zerowastestore.com/" target="_blank" className="justify-content-center text-white">
+                                Shop Now!
+                            </Button>
+                        </div>
                     </div>
-                </div>
-            </Card>}
-            right = {<Card>
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img src={DoneGood} className='card-img'/>
-                    <div className = "mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
-                        <h2>Done Good</h2> <p>DoneGood is an online platform that connects consumers with ethical and sustainable brands. They curate a wide range of products, including clothing, accessories, home goods, and personal care items, all from companies that prioritize social and environmental responsibility. DoneGood makes it easier for conscious shoppers to find and support businesses that align with their values, promoting a more sustainable and ethical marketplace.</p>
-                        <Button as = "a" href = "https://donegood.co/" target="_blank" className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
+                </Card>
+            </>} 
+            right ={<>
+                <Card>
+                    <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                        <img src={DoneGood} className='card-img'/>
+                        <div className = "mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
+                            <h2>Done Good</h2> <p>DoneGood is an online platform that connects consumers with ethical and sustainable brands. They curate a wide range of products, including clothing, accessories, home goods, and personal care items, all from companies that prioritize social and environmental responsibility. DoneGood makes it easier for conscious shoppers to find and support businesses that align with their values, promoting a more sustainable and ethical marketplace.</p>
+                            <Button as = "a" href = "https://donegood.co/" target="_blank" className="justify-content-center text-white">
+                                Shop Now!
+                            </Button>
+                        </div>
                     </div>
+                </Card>
+            </>}>
+        </TripleBlock>
+        <h2>Sustainable Toys</h2>
+        <TripleBlock mb = "5"
+        left = {<Card>
+            <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                <img className="card-img" src={BabyPenguin} />
+                <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
+                    <h2>The Baby Penguin</h2> <p>The Baby Penguin is a dedicated platform empowering parents to make sustainable choices for their children. They curate a selection of the most sustainable toys that promote learning, development, and happiness. Their toys are designed to last for generations, made from responsibly sourced wood, and contribute to reducing waste in landfills.</p>
+                    <Button as = "a" href = "https://shop.thebabypenguin.com/" target="_blank" className="justify-content-center text-white">
+                        Shop Now!
+                    </Button>
                 </div>
-            </Card>}/>
-            <h2>Sustainable Toys</h2>
-            <ThreeBlock animation={false} 
-            left = {<Card>
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img className="card-img" src={BabyPenguin} />
-                    <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
-                        <h2>The Baby Penguin</h2> <p>The Baby Penguin is a dedicated platform empowering parents to make sustainable choices for their children. They curate a selection of the most sustainable toys that promote learning, development, and happiness. Their toys are designed to last for generations, made from responsibly sourced wood, and contribute to reducing waste in landfills.</p>
-                        <Button as = "a" href = "https://shop.thebabypenguin.com/" target="_blank" className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
-                    </div>
+            </div>
+        </Card>}
+        middle = {
+            <Card className="text-center">
+            <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                <img className="card-img" src={GreenToys} />
+                <div className="mx-auto p-lg-4 text-primary text-start">
+                    <h2>Green Toys</h2> <p>Green Toys is a brand that specializes in eco-friendly toys made from recycled plastic materials. Their toys are designed with sustainability in mind, prioritizing both environmental and child safety. Green Toys offers a wide range of imaginative and durable playthings that promote creative play while reducing waste and supporting a greener future.</p>
+                    <Button as = "a" href = "https://www.greentoys.com/" target="_blank" className="text-white">
+                        Shop Now!
+                    </Button>
                 </div>
-            </Card>}
-            center = {
-                <Card className="text-center">
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img className="card-img" src={GreenToys} />
-                    <div className="mx-auto p-lg-4 text-primary text-start">
-                        <h2>Green Toys</h2> <p>Green Toys is a brand that specializes in eco-friendly toys made from recycled plastic materials. Their toys are designed with sustainability in mind, prioritizing both environmental and child safety. Green Toys offers a wide range of imaginative and durable playthings that promote creative play while reducing waste and supporting a greener future.</p>
-                        <Button as = "a" href = "https://www.greentoys.com/" target="_blank" className="text-white">
-                            Shop Now!
-                        </Button>
-                    </div>
+            </div>
+        </Card>}
+        right = {<Card className="text-center">
+            <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
+                <img className="card-img" src={PlanToys} />
+                <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
+                    <h2>Plan Toys</h2> <p>Plan Toys is a renowned brand known for their sustainable and educational wooden toys. They use eco-friendly materials, such as rubberwood, and their manufacturing process follows strict environmental standards. Plan Toys offers a diverse range of toys that foster creativity, imagination, and early childhood development, while also promoting a commitment to sustainability and natural play.</p>
+                    <Button as = "a" href = "https://www.plantoys.com/" target="_blank" className="justify-content-center text-white">
+                        Shop Now!
+                    </Button>
                 </div>
-            </Card>}
-            right = {<Card className="text-center">
-                <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
-                    <img className="card-img" src={PlanToys} />
-                    <div className="mx-auto p-lg-4 p-md-2 p-1 bg-info text-primary text-start">
-                        <h2>Plan Toys</h2> <p>Plan Toys is a renowned brand known for their sustainable and educational wooden toys. They use eco-friendly materials, such as rubberwood, and their manufacturing process follows strict environmental standards. Plan Toys offers a diverse range of toys that foster creativity, imagination, and early childhood development, while also promoting a commitment to sustainability and natural play.</p>
-                        <Button as = "a" href = "https://www.plantoys.com/" target="_blank" className="justify-content-center text-white">
-                            Shop Now!
-                        </Button>
-                    </div>
-                </div>
-            </Card>}/>
+            </div>
+        </Card>}/>
         <h2> Home Goods</h2>
-        <ThreeBlock animation={true} 
+        <TripleBlock animation={true} mb = "5"
             left = {<Card>
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={WGAC} />
@@ -117,7 +130,7 @@ function EcoBrands() {
                     </div>
                 </div>
             </Card>}
-            center = {
+            middle = {
                 <Card className="text-center">
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={SevGen} />
@@ -140,7 +153,7 @@ function EcoBrands() {
                     </div>
                 </div>
             </Card>}/>
-            <ThreeBlock animation={true} 
+            <TripleBlock animation={true} mb = "5"
             left = {<Card>
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={EarthBrands} />
@@ -152,7 +165,7 @@ function EcoBrands() {
                     </div>
                 </div>
             </Card>}
-            center = {
+            middle = {
                 <Card className="text-center">
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={Pela} />
@@ -176,7 +189,7 @@ function EcoBrands() {
                 </div>
             </Card>}/>
         <h2>Clothing and Apparel</h2>
-        <ThreeBlock animation={true} 
+        <TripleBlock animation={true} mb = "5"
             left = {<Card>
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={Patagonia} />
@@ -188,7 +201,7 @@ function EcoBrands() {
                     </div>
                 </div>
             </Card>}
-            center = {
+            middle = {
                 <Card className="text-center">
                 <div className={styles.innerCard + "p-md-2 p-1 bg-info"}>
                     <img className="card-img" src={TenTree} />
@@ -212,6 +225,7 @@ function EcoBrands() {
                 </div>
             </Card>}/>
         </div>
+        
     </>);
 }
 
