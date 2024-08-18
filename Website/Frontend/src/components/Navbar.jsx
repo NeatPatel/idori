@@ -56,6 +56,7 @@ function Navbar() {
                             <Link to="/get-involved" className={styles.navTextNoHover}>Get Involved</Link>
                         </NavDropdown.Item>
                     </NavDropdown>
+                    <Link to="/our-story"className={styles.navText + " nav-link text-primary"}>Our Story</Link>
                     <Link to="/press" className={styles.navText + " nav-link text-primary"}>Press</Link>
                     <Link to="/play" className={styles.navText + " nav-link text-primary"}>Play!</Link>
                 </Nav>

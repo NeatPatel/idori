@@ -16,6 +16,7 @@ import Press from './pages/Press.jsx';
 import Play from './pages/Play.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
+import OurStory from './pages/OurStory.jsx';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Route path="play" element={<Play />} />
             <Route path="terms&conditions" element={<TermsAndConditions />}></Route>
             <Route path="privacy-policy" element = {<PrivacyPolicy/>}></Route>
+            <Route path="our-story" element = {<OurStory/>}></Route>
           </Route>
         </Routes>
 
