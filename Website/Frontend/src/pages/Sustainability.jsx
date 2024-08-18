@@ -9,7 +9,7 @@ function Sustainability() {
     document.title = sustainabilityTitle;
 
     return (<>
-    <div>
+    <div className={styles.mainBodyDiv}>
     <SingleBlock mt="10" mb="5" content={<>
             <h1 className="text-primary">Engage in Fun and Educational Sustainability Activities for Kids</h1>
             <p style = {{"color" : "#9067CC"}}>Our curated list of engaging activities offers practical 
@@ -17,7 +17,7 @@ function Sustainability() {
         </>} />
 
         <DoubleBlock mt="10" mb="0" left={<>
-                <img style={{"width":"500px"}} src='https://idori.com/cdn/shop/files/kids_recycling.webp?v=1688579856&width=1500'></img>
+                <img style={{"width":"40vw"}} src='https://idori.com/cdn/shop/files/kids_recycling.webp?v=1688579856&width=1500'></img>
         </>} right={<>
         <div className = "text-primary">
         <h1>Ready, Set, Recycle!</h1>
@@ -31,7 +31,7 @@ function Sustainability() {
         </>} />
 
         <DoubleBlock mt="10" mb="0" left={<>
-                <img style={{"width":"500px"}} src='https://idori.com/cdn/shop/files/CuriousGeorge_How-to-Make-a-Plastic-Bottle-Birdfeeder_Mezz-Image-2-908x510.jpg?v=1688580994'></img>
+                <img style={{"width":"40vw"}} src='https://idori.com/cdn/shop/files/CuriousGeorge_How-to-Make-a-Plastic-Bottle-Birdfeeder_Mezz-Image-2-908x510.jpg?v=1688580994'></img>
         </>} right={<>
         <div className = "text-primary">
         <h1>DIY Upcycled Bird Feeder</h1>
@@ -43,7 +43,7 @@ function Sustainability() {
             
         </>} />
         <DoubleBlock mt="10" mb="10" left={<>
-                <img style={{"width":"500px"}} src='https://idori.com/cdn/shop/files/IMG_8432.jpg?v=1688581589'></img>
+                <img style={{"width":"40vw"}} src='https://idori.com/cdn/shop/files/IMG_8432.jpg?v=1688581589'></img>
         </>} right={<>
         <div className = "text-primary">
         <h1>Extreme Toilet Paper Recycling</h1>
